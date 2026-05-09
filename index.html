@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Área de Projetos - ReqLev</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <header>
+      <img src="assets/img/logo.png" class="logo" alt="Logo" />
+      <nav>
+        <a href="#"
+          ><span class="icon"><i class="ph ph-kanban"></i></span> Área de
+          Trabalho</a
+        >
+        <a href="#"
+          ><span class="icon"><i class="ph ph-user"></i></span> Perfil</a
+        >
+        <a href="#"
+          ><span class="icon"><i class="ph ph-gear"></i></span> Configurações</a
+        >
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="top-section">
+        <div class="section-header">Área de Trabalho</div>
+        <div class="create-btn">
+          <span class="plus-icon"><i class="ph ph-plus"></i></span> Criar
+          Projeto
+        </div>
+      </div>
+
+      <div class="projects-list">
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-title">Projeto SENAI</div>
+            <div class="project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              tempus molestie felis, sit mattis magna fermentum sed. Fusce
+              possuere augue ac dole iaculis, in placerat ligula consectetur.
+              Sed sodales nec sapien vitae cursus. Pellentesque libero dapibus
+              molestie. Proin sollicitudin ut amet huis is archived. Suspendisse
+              rhoncus eglit justo cu volutpat.
+            </div>
+          </div>
+          <div class="project-actions">
+            <button class="action-btn edit-btn">
+              <i class="ph ph-pencil-simple"></i>
+            </button>
+            <button class="action-btn delete-btn">
+              <i class="ph ph-trash"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-title">Projeto SENAI</div>
+            <div class="project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              tempus molestie felis, sit mattis magna fermentum sed. Fusce
+              possuere augue ac dole iaculis, in placerat ligula consectetur.
+              Sed sodales nec sapien vitae cursus. Pellentesque libero dapibus
+              molestie. Proin sollicitudin ut amet huis is archived. Suspendisse
+              rhoncus eglit justo cu volutpat.
+            </div>
+          </div>
+          <div class="project-actions">
+            <button class="action-btn edit-btn">
+              <i class="ph ph-pencil-simple"></i>
+            </button>
+            <button class="action-btn delete-btn">
+              <i class="ph ph-trash"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-title">Projeto SENAI</div>
+            <div class="project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              tempus molestie felis, sit mattis magna fermentum sed. Fusce
+              possuere augue ac dole iaculis, in placerat ligula consectetur.
+              Sed sodales nec sapien vitae cursus. Pellentesque libero dapibus
+              molestie. Proin sollicitudin ut amet huis is archived. Suspendisse
+              rhoncus eglit justo cu volutpat.
+            </div>
+          </div>
+          <div class="project-actions">
+            <button class="action-btn edit-btn">
+              <i class="ph ph-pencil-simple"></i>
+            </button>
+            <button class="action-btn delete-btn">
+              <i class="ph ph-trash"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-title">Projeto SENAI</div>
+            <div class="project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              tempus molestie felis, sit mattis magna fermentum sed. Fusce
+              possuere augue ac dole iaculis, in placerat ligula consectetur.
+              Sed sodales nec sapien vitae cursus. Pellentesque libero dapibus
+              molestie. Proin sollicitudin ut amet huis is archived. Suspendisse
+              rhoncus eglit justo cu volutpat.
+            </div>
+          </div>
+          <div class="project-actions">
+            <button class="action-btn edit-btn">
+              <i class="ph ph-pencil-simple"></i>
+            </button>
+            <button class="action-btn delete-btn">
+              <i class="ph ph-trash"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-title">Projeto SENAI</div>
+            <div class="project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              tempus molestie felis, sit mattis magna fermentum sed. Fusce
+              possuere augue ac dole iaculis, in placerat ligula consectetur.
+              Sed sodales nec sapien vitae cursus. Pellentesque libero dapibus
+              molestie. Proin sollicitudin ut amet huis is archived.
+            </div>
+          </div>
+          <div class="project-actions">
+            <button class="action-btn edit-btn">
+              <i class="ph ph-pencil-simple"></i>
+            </button>
+            <button class="action-btn delete-btn">
+              <i class="ph ph-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Creating New Project -->
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <h2 class="modal-title">Criação de Projetos</h2>
+
+        <form id="projectForm">
+          <div class="form-group">
+            <label for="projectName">Nome do Projeto:</label>
+            <input
+              type="text"
+              id="projectName"
+              name="projectName"
+              placeholder="ProjetoABC..."
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="projectDescription">Descrição:</label>
+            <textarea
+              id="projectDescription"
+              name="projectDescription"
+              placeholder="Esse Projeto foi feito..."
+              rows="8"
+            ></textarea>
+          </div>
+
+          <div class="modal-actions">
+            <button type="button" class="btn-cancel" id="cancelBtn">
+              Cancelar
+            </button>
+            <button type="submit" class="btn-create">
+              <i class="ph ph-plus"></i> Criar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
