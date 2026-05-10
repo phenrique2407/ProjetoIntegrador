@@ -96,3 +96,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+/* const cardList = document.getElementById("cardList");
+
+function createCard(data) {
+  data.forEach((card) => {
+    let cardHtml;
+    cardHtml.innerHtml = `
+        <div>${card.nome}</div>
+        `;
+    cardList.appendChild(card);
+  });
+} */
