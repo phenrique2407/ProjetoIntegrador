@@ -1,0 +1,229 @@
+/* Layout Geral */
+#project-header {
+  flex: 1;
+  background-color: var(--bg-interactive);
+  padding: var(--gap-48);
+  border-radius: var(--radius-md);
+  text-align: center;
+  font-size: var(--fs-body);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-24);
+  margin-top: var(--gap-32);
+}
+
+/* Cards e Listagem */
+.requirements-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-16);
+  max-height: 550px;
+  overflow-y: auto;
+  padding-right: var(--gap-8);
+}
+
+/* Custom Scrollbar */
+.requirements-list::-webkit-scrollbar {
+  width: 6px;
+}
+.requirements-list::-webkit-scrollbar-track {
+  background: var(--bg-base);
+  border-radius: 10px;
+}
+.requirements-list::-webkit-scrollbar-thumb {
+  background: var(--bg-border);
+  border-radius: 10px;
+}
+.requirements-list::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-accent);
+}
+
+.req-card {
+  background: var(--bg-surface);
+  padding: var(--gap-24);
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid var(--bg-border);
+}
+
+.req-content h3 {
+  font-size: var(--fs-h4);
+  margin-bottom: var(--gap-8);
+  color: var(--text-primary);
+}
+
+.req-content p {
+  color: var(--text-secondary);
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  max-width: 250px;
+  text-align: justify;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  gap: var(--gap-8);
+  margin-top: var(--gap-16);
+}
+.tag {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: var(--fs-tiny);
+  font-weight: bold;
+}
+.tag-success {
+  background: var(--success-bg);
+  color: var(--text-primary);
+}
+.tag-danger {
+  background: var(--danger-bg);
+  color: var(--text-primary);
+}
+.tag-blue {
+  background: var(--brand-accent);
+  color: var(--text-primary);
+}
+.tag-gray {
+  background: var(--bg-interactive);
+  color: var(--text-secondary);
+}
+
+/* Ações dos Cards */
+.req-actions {
+  display: flex;
+  gap: var(--gap-8);
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Overview Panel */
+.overview-panel {
+  background: var(--bg-surface);
+  padding: var(--gap-32);
+  border-radius: var(--radius-md);
+  max-height: 550px;
+}
+
+.progress-bar {
+  background: var(--bg-interactive);
+  border-radius: 20px;
+  height: 25px;
+  margin: var(--gap-16) 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: var(--success-bg);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-sm);
+  font-weight: bold;
+  transition: width 0.5s ease;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 220px;
+  margin: var(--gap-24) auto;
+}
+.chart-legend {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-8);
+  font-size: var(--fs-body);
+}
+.chart-legend div {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-8);
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.dot-success {
+  background: var(--success-bg);
+}
+.dot-danger {
+  background: var(--danger-bg);
+}
+
+/* Modais e Formulários */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: var(--bg-surface);
+  padding: var(--gap-48);
+  border-radius: var(--radius-md);
+  width: 90%;
+  max-width: 600px;
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-24);
+}
+
+.btn-group {
+  display: flex;
+  background: var(--bg-interactive);
+  border: 1px solid var(--bg-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.group-item {
+  flex: 1;
+  padding: 12px;
+  background: transparent;
+  border: none;
+  color: var(--text-disabled);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.group-item.active {
+  background: var(--text-secondary);
+  color: var(--bg-base);
+}
+
+.group-item:not(:last-child) {
+  border-right: 1px solid var(--bg-border);
+}

@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="project-details.css" />
+    <title>Detalhes do Projeto - ReqLev</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="projects.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="assets/img/logo.png" class="logo" alt="Logo" />
+      <nav>
+        <a href="index.html">
+          <span class="icon"><i class="ph ph-kanban"></i></span> Área de
+          Trabalho
+        </a>
+        <a href="#">
+          <span class="icon"><i class="ph ph-user"></i></span> Perfil
+        </a>
+        <a href="#">
+          <span class="icon"><i class="ph ph-gear"></i></span> Configurações
+        </a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="top-section">
+        <h1 id="project-header">Projeto SENAI</h1>
+        <button class="create-btn" onclick="openModal('reqCreateModal')">
+          <i class="ph ph-plus"></i> Criar Requisito
+        </button>
+      </div>
+
+      <div class="content-grid">
+        <section class="requirements-list">
+          <article class="req-card">
+            <div class="req-content">
+              <h3>Registro de Cliente</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur tempus molestie felis.
+              </p>
+              <div class="tags">
+                <span class="tag tag-danger">RNF</span>
+                <span class="tag tag-blue">Usuário</span>
+                <span class="tag tag-gray">A Fazer</span>
+              </div>
+            </div>
+            <div class="req-actions">
+              <button
+                class="action-btn edit-btn"
+                onclick="openModal('reqUpdateModal')"
+              >
+                <i class="ph ph-pencil-simple"></i>
+              </button>
+              <button class="action-btn delete-btn">
+                <i class="ph ph-trash"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="req-card">
+            <div class="req-content">
+              <h3>Validação de CPF</h3>
+              <p>O sistema deve validar o CPF do usuário durante o cadastro.</p>
+              <div class="tags">
+                <span class="tag tag-success">RF</span>
+                <span class="tag tag-blue">Sistema</span>
+                <span class="tag tag-success">Concluído</span>
+              </div>
+            </div>
+            <div class="req-actions">
+              <button
+                class="action-btn edit-btn"
+                onclick="openModal('reqUpdateModal')"
+              >
+                <i class="ph ph-pencil-simple"></i>
+              </button>
+              <button class="action-btn delete-btn">
+                <i class="ph ph-trash"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="req-card">
+            <div class="req-content">
+              <h3>Registro de Cliente</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur tempus molestie felis.
+              </p>
+              <div class="tags">
+                <span class="tag tag-danger">RNF</span>
+                <span class="tag tag-blue">Usuário</span>
+                <span class="tag tag-gray">A Fazer</span>
+              </div>
+            </div>
+            <div class="req-actions">
+              <button
+                class="action-btn edit-btn"
+                onclick="openModal('reqUpdateModal')"
+              >
+                <i class="ph ph-pencil-simple"></i>
+              </button>
+              <button class="action-btn delete-btn">
+                <i class="ph ph-trash"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="req-card">
+            <div class="req-content">
+              <h3>Validação de CPF</h3>
+              <p>O sistema deve validar o CPF do usuário durante o cadastro.</p>
+              <div class="tags">
+                <span class="tag tag-success">RF</span>
+                <span class="tag tag-blue">Sistema</span>
+                <span class="tag tag-success">Concluído</span>
+              </div>
+            </div>
+            <div class="req-actions">
+              <button
+                class="action-btn edit-btn"
+                onclick="openModal('reqUpdateModal')"
+              >
+                <i class="ph ph-pencil-simple"></i>
+              </button>
+              <button class="action-btn delete-btn">
+                <i class="ph ph-trash"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="req-card">
+            <div class="req-content">
+              <h3>Registro de Cliente</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur tempus molestie felis.
+              </p>
+              <div class="tags">
+                <span class="tag tag-danger">RNF</span>
+                <span class="tag tag-blue">Usuário</span>
+                <span class="tag tag-gray">A Fazer</span>
+              </div>
+            </div>
+            <div class="req-actions">
+              <button
+                class="action-btn edit-btn"
+                onclick="openModal('reqUpdateModal')"
+              >
+                <i class="ph ph-pencil-simple"></i>
+              </button>
+              <button class="action-btn delete-btn">
+                <i class="ph ph-trash"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="req-card">
+            <div class="req-content">
+              <h3>Validação de CPF</h3>
+              <p>O sistema deve validar o CPF do usuário durante o cadastro.</p>
+              <div class="tags">
+                <span class="tag tag-success">RF</span>
+                <span class="tag tag-blue">Sistema</span>
+                <span class="tag tag-success">Concluído</span>
+              </div>
+            </div>
+            <div class="req-actions">
+              <button
+                class="action-btn edit-btn"
+                onclick="openModal('reqUpdateModal')"
+              >
+                <i class="ph ph-pencil-simple"></i>
+              </button>
+              <button class="action-btn delete-btn">
+                <i class="ph ph-trash"></i>
+              </button>
+            </div>
+          </article>
+        </section>
+
+        <aside class="overview-panel">
+          <h2>Visão Geral:</h2>
+          <div class="progress-section">
+            <span>Conclusão:</span>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 0%">0%</div>
+            </div>
+          </div>
+
+          <div class="chart-container">
+            <canvas id="requirementsChart"></canvas>
+          </div>
+
+          <div class="chart-legend">
+            <div>
+              <span class="dot dot-success"></span> Requisitos Funcionais
+            </div>
+            <div>
+              <span class="dot dot-danger"></span> Requisitos Não Funcionais
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <div id="reqCreateModal" class="modal">
+      <div class="modal-content">
+        <h2 class="modal-title">Criação de Requisitos</h2>
+        <form id="reqCreateForm">
+          <div class="form-group">
+            <label>Nome do Requisito:</label>
+            <input type="text" placeholder="RequisitoABC..." required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Tipo de Requisito:</label>
+              <div class="btn-group">
+                <button type="button" class="group-item active">RF</button>
+                <button type="button" class="group-item">RNF</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Para Quem é o Requisito:</label>
+              <div class="btn-group">
+                <button type="button" class="group-item active">Sistema</button>
+                <button type="button" class="group-item">Usuario</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Andamento do Requisito:</label>
+            <div class="btn-group full-width">
+              <button type="button" class="group-item active">A Fazer</button>
+              <button type="button" class="group-item">Em Andamento</button>
+              <button type="button" class="group-item">Concluído</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Descrição:</label>
+            <textarea placeholder="Esse Requisito..." rows="5"></textarea>
+          </div>
+
+          <div class="modal-actions">
+            <button
+              type="button"
+              class="btn-cancel"
+              onclick="closeModal('reqCreateModal')"
+            >
+              Cancelar
+            </button>
+            <button type="submit" class="btn-create">
+              <i class="ph ph-plus"></i> Criar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="reqUpdateModal" class="modal">
+      <div class="modal-content">
+        <h2 class="modal-title">Atualizar Requisito</h2>
+        <form id="reqUpdateForm">
+          <div class="form-group">
+            <label>Nome do Requisito:</label>
+            <input
+              type="text"
+              id="updateName"
+              placeholder="RequisitoABC..."
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Tipo de Requisito:</label>
+              <div class="btn-group">
+                <button type="button" class="group-item active">RF</button>
+                <button type="button" class="group-item">RNF</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Para Quem é o Requisito:</label>
+              <div class="btn-group">
+                <button type="button" class="group-item active">Sistema</button>
+                <button type="button" class="group-item">Usuario</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Andamento do Requisito:</label>
+            <div class="btn-group full-width">
+              <button type="button" class="group-item">A Fazer</button>
+              <button type="button" class="group-item active">
+                Em Andamento
+              </button>
+              <button type="button" class="group-item">Concluído</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Descrição:</label>
+            <textarea
+              id="updateDesc"
+              placeholder="Esse Requisito..."
+              rows="5"
+            ></textarea>
+          </div>
+
+          <div class="modal-actions">
+            <button
+              type="button"
+              class="btn-cancel"
+              onclick="closeModal('reqUpdateModal')"
+            >
+              Cancelar
+            </button>
+            <button type="submit" class="btn-create">
+              <i class="ph ph-arrows-clockwise"></i> Atualizar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
